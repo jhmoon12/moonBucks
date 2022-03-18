@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="heading d-flex justify-between">
+        <h2 id="category-title" class="mt-1">에스프레소 메뉴관리</h2>
+        <span class="mr-2 mt-4 menu-count">총 0개</span>
+    </div>
+    <nav class="d-flex justify-center flex-wrap">
+      <button 
+      data-category-name="espresso"
+      class="cafe-category-name btn bg-white shadow mx-1">
+        에스프레소
+      </button>
+      <button 
+      data-category-name="frappuccino"
+      class="cafe-category-name btn bg-white shadow mx-1">
+        프라푸치노
+      </button>
+      <button 
+      data-category-name="blended"
+      class="cafe-category-name btn bg-white shadow mx-1">
+        블렌디드
+      </button>
+      <button 
+      data-category-name="teavana"
+      class="cafe-category-name btn bg-white shadow mx-1">
+        티바나
+      </button>
+      <button 
+      data-category-name="desert"
+      class="cafe-category-name btn bg-white shadow mx-1">
+        디저트
+      </button>
+    </nav>
+    
+    <form id="menu-form">
+        <div class="d-flex w-100">
+          <label for="menu-name" class="input-label" hidden>
+            메뉴 이름
+          </label>
+          <input
+            type="text"
+            id="menu-name"
+            name="menuName"
+            class="input-field"
+            placeholder="메뉴 이름"
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            name="submit"
+            id="menu-submit-button"
+            class="input-submit bg-green-600 ml-2"
+          >
+            확인
+          </button>
+        </div>
+      </form>
+      <ul id="menu-list" class="mt-3 pl-0"></ul>
+    <script src="./index/indexcopy1.js"></script>
+   
+</body>
+</html>
